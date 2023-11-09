@@ -49,7 +49,7 @@ include_once "show-caixa-action.php";
             <h4><i class="fa-solid fa-pen-clip"></i> Lançamentos</h4>
             <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#add-new-lancamento">Adicionar Lançamento</button>
             <div class="row mt-3">
-                <?php $msg; ?>
+                <?= $msg; ?>
             </div>
             <div class="d-flex justify-content-end">
                 <p><small>Saldo Atual:</small> R$ 0,00</p>

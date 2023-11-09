@@ -1,5 +1,6 @@
 <?php
 session_start();
+date_default_timezone_set('America/Sao_Paulo');
 require_once "db.php";
 
 $id = filter_input(INPUT_GET, "id", FILTER_VALIDATE_INT);
@@ -20,8 +21,8 @@ if ($sql->rowCount() <= 0) {
 }
 
 $caixa = $sql->fetch();
+
 $msg = '';
-$msg = "<p class='alert alert-success'>Mensagem Teste</p>";
 if (!empty($_SESSION['msg'])) {
     $msg = $_SESSION['msg'];
     unset($_SESSION['msg']);
