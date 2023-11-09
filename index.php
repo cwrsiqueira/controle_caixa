@@ -112,7 +112,7 @@ include_once "index-action.php";
                             <td><?= $item['nome'] ?></td>
                             <td>R$ <?= number_format($item['saldo_inicial'], 2, ',', '.') ?></td>
                             <td class="text-center">
-                                <a title="Detalhes do Caixa" href="">
+                                <a title="Detalhes do Caixa" href="show-caixa.php?id=<?= $item['id'] ?>">
                                     <i class="fa-solid fa-circle-info action-icon text-warning"></i>
                                 </a>
                             </td>
