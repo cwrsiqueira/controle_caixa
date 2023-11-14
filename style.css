@@ -12,3 +12,17 @@
 .action-icon:hover {
   transform: scale(1.2);
 }
+
+.input-group-text {
+  cursor: pointer;
+}
+
+.action-icon-edit {
+  font-size: 22px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.action-icon-edit:hover {
+  transform: scale(1.2);
+}
