@@ -47,7 +47,8 @@ if (!empty($_SESSION['msg'])) {
  */
 $sql = $db->prepare("SELECT id, id_caixa, movimento, data_movimento, discriminacao_movimento, valor_movimento
                     FROM caixas_lancamentos
-                    WHERE id_caixa = :id AND (data_movimento BETWEEN :data_ini AND :data_fin)");
+                    WHERE id_caixa = :id AND (data_movimento BETWEEN :data_ini AND :data_fin)
+                    ORDER BY data_movimento");
 $sql->bindValue(":id", $id);
 $sql->bindValue(":data_ini", $data_ini);
 $sql->bindValue(":data_fin", $data_fin);
