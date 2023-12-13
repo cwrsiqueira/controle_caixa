@@ -16,3 +16,5 @@
 - Clique em Importar (observe os termos diferentes caso seu phpmyadmin esteja em outro idioma)
 
 Obs: Qualquer dúvida pode deixar uma mensagem no comentário do vídeo no Youtube.
+
+<iframe src="https://github.com/sponsors/cwrsiqueira/button" title="Sponsor cwrsiqueira" height="32" width="114" style="border: 0; border-radius: 6px;"></iframe>
