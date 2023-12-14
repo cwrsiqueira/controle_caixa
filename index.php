@@ -9,12 +9,12 @@ include_once "index-action.php";
     </div>
 
     <div class="row mt-3">
-        <div class="col">
-            <button class="btn btn-success" type="button" data-bs-toggle="modal" data-bs-target="#add-new-caixa">
+        <div class="col-lg mb-2">
+            <button class="btn btn-success btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#add-new-caixa">
                 <i class="fa-solid fa-plus"></i> Criar Novo Caixa
             </button>
         </div>
-        <div class="col">
+        <div class="col-lg mb-2">
             <form method="get" id="form-search">
                 <div class="input-group">
                     <span class="input-group-text" title="Limpar Busca" id="btn-clean">
@@ -27,7 +27,7 @@ include_once "index-action.php";
                 </div>
             </form>
         </div>
-        <div class="col">
+        <div class="col-lg">
             <form method="get" class="d-flex w-full justify-content-center" id="form-select-rpp">
                 <input type="hidden" name="p" value="<?= '1'; ?>">
                 <input type="hidden" name="busca" value="<?= $busca ?? ''; ?>">
