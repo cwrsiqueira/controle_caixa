@@ -50,8 +50,8 @@ $sql = $db->prepare("SELECT id, id_caixa, movimento, data_movimento, discriminac
                     WHERE id_caixa = :id AND (data_movimento BETWEEN :data_ini AND :data_fin)
                     ORDER BY data_movimento");
 $sql->bindValue(":id", $id);
-$sql->bindValue(":data_ini", $data_ini);
-$sql->bindValue(":data_fin", $data_fin);
+$sql->bindValue(":data_ini", $data_ini . " 00:00:00");
+$sql->bindValue(":data_fin", $data_fin . " 23:59:59");
 $sql->execute();
 $lancamentos = $sql->fetchAll(PDO::FETCH_ASSOC);
 
